@@ -1,0 +1,52 @@
+{
+  "name": "codette-ai-interface",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "A sophisticated AI assistant interface featuring multi-perspective reasoning, quantum-inspired processing, and cognitive cocoon artifact management.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "demo": "npm run dev",
+    "deploy:netlify": "npm run build && npx netlify deploy --prod --dir=dist",
+    "deploy:vercel": "npm run build && npx vercel --prod",
+    "deploy:docker": "docker build -t codette-ai . && docker run -p 3000:3000 codette-ai",
+    "test": "echo 'Tests will be implemented' && exit 0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.263.1",
+    "@supabase/supabase-js": "^2.39.3",
+    "framer-motion": "^10.16.4",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^1.14.0",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "date-fns": "^2.30.0",
+    "uuid": "^9.0.1",
+    "cross-fetch": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/uuid": "^9.0.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.45.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
